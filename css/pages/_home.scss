@@ -1,0 +1,21 @@
+.main-hero{
+	margin-bottom:60px;
+
+	img{
+		max-width: 100%;
+	}
+
+	.call-out-block{
+		background:$pink;
+		padding:15px;
+		position: absolute;
+		right: 5%;
+		bottom: 25%;
+		color: $white;
+		font-size:2em;
+	}
+}
+
+#home-about{
+	margin-top:0;
+}

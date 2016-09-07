@@ -1,0 +1,25 @@
+/* VENDOR FILES */
+@import 'vendor/bootstrap/mixins';
+@import 'vendor/bootstrap/bootstrap-reboot';
+@import 'vendor/bootstrap/utilities';
+@import 'vendor/bootstrap/bootstrap-grid';
+@import 'vendor/ionicons/ionicons';
+
+
+/* UTILITY CLASSES */
+@import 'common/variables';
+@import 'common/utility';
+@import 'common/globals';
+
+
+/* COMMON */
+@import 'partials/header';
+@import 'partials/footer';
+
+
+/* PAGES */
+@import 'pages/home';
+
+
+
+

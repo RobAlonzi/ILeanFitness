@@ -1,0 +1,51 @@
+header{
+    font-size:1rem;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+
+
+header .main-logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    float:left; 
+    margin-left:5%;
+    padding: 55px 15px 15px;
+    text-align: center;
+    background: $pink;
+    color: $white;
+    text-decoration: none;
+
+    &:hover, &:focus{
+        color: lighten($pink, 20%);
+    }
+    
+}
+
+header .main-nav{
+    text-align:right;
+    float:right;
+    padding: 20px 15px 15px;
+    background: $pink;
+    margin-right:5%;
+
+    ul{
+        li{
+            a{
+                color:$white;
+                margin:0 10px;
+            }
+        }
+    }
+}
+
+.main-nav ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.main-nav li{
+    display:inline-block;
+}
