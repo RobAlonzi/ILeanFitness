@@ -1,5 +1,6 @@
 .main-hero{
 	margin-bottom:60px;
+	position:relative;
 
 	img{
 		max-width: 100%;
@@ -11,11 +12,41 @@
 		position: absolute;
 		right: 5%;
 		bottom: 25%;
+		margin-left:5%;
 		color: $white;
 		font-size:2em;
+
+		&:after{
+			content:"\f10a";
+			font-family: Ionicons;
+			margin-left:10px;
+			font-size:1.1em;
+		}
+
+		&:hover, &:focus{
+			color: lighten($pink, 20%);
+			text-decoration: none;
+		}
+
+		@include bp-sm {
+			position:static;
+			display: block;
+			font-size:1.2em;
+			margin-left:0;
+		}
+	}
+
+	@include bp-sm {
+		margin-bottom:30px;
 	}
 }
 
 #home-about{
 	margin-top:0;
+
+	p{
+		@include bp-sm {
+			text-align: justify;
+		}
+	}
 }

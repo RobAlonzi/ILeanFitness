@@ -1,6 +1,40 @@
 footer{
-    background: $pink;
-    color:$white;
-    padding:30px 0;
+	background: $pink;
+	color:$white;
+	padding:20px 0;
+
+	#main-footer{
+
+		margin:15px;
+
+	    .footer-social{
+	    	text-align: right;
+
+		    ul{
+		    	margin:0;
+
+		    	li{
+		    		display: inline-block;
+		    		margin:0 15px;
+
+		    		a{
+		    			font-size:2em;
+		    		}
+		    	}
+	    	}
+
+
+	    	@include bp-sm {
+				text-align: center;
+				margin:20px 0 0;
+			}
+
+	    }
+
+	    @include bp-sm {
+	    	margin:0;
+			text-align: center;
+		}
+	}
 }
 

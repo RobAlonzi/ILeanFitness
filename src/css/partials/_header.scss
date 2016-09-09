@@ -3,6 +3,10 @@ header{
     z-index: 1;
     position: absolute;
     width: 100%;
+
+    @include bp-header-542 {
+        position: static;
+    }
 }
 
 
@@ -17,8 +21,17 @@ header .main-logo{
     color: $white;
     text-decoration: none;
 
-    &:hover, &:focus{
+    &:hover, &:focus{ 
         color: lighten($pink, 20%);
+    }
+
+    @include bp-sm {
+        margin: 0;
+    }
+
+    @include bp-header-542 {
+        width:100%;
+        padding:15px;
     }
     
 }
@@ -33,10 +46,19 @@ header .main-nav{
     ul{
         li{
             a{
-                color:$white;
                 margin:0 10px;
             }
         }
+    }
+
+    @include bp-sm {
+        margin: 0;   
+    }
+
+    @include bp-header-542 {
+        width:100%;
+        padding:15px;
+        text-align: center;
     }
 }
 

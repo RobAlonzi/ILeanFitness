@@ -12,7 +12,11 @@ body {
   text-rendering: optimizeLegibility;
   background: #FFF;
   color: #6C7A89;
-  line-height:1; 
+  line-height:1;
+
+  @include bp-sm {
+    font-size:14px;  
+  } 
 }
 
 
@@ -35,10 +39,15 @@ p{
 
 a{
   text-decoration: none;
+  color:$white;
 
   &:hover, &:focus{
     color: lighten($pink, 20%);
   }
+}
+
+ul li{
+  list-style: none;
 }
 
 .row{
