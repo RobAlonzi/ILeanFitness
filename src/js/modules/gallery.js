@@ -4,8 +4,11 @@ let exports = module.exports = {};
 
 
 exports.initGallery = () => {
-	console.log('shsh');
-    baguetteBox.run('.home-page-gallery');
+    baguetteBox.run('.home-page-gallery', {
+    captions: function(element) {
+        return element.getElementsByTagName('img')[0].alt;
+    }
+});
 
 	return true;
 }
