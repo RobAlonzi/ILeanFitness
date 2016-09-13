@@ -40,23 +40,11 @@
     ]
   },
   "browser": {
-    "google": "https://maps.googleapis.com/maps/api/js?key=AIzaSyDtFVd8WszJM0FnyfUgI89dlIXBdvBk9e4",
-    "Galleria": "./src/js/vendor/galleria-1.4.2-ytFix.js",
-    "GalleriaTwelve": "./src/js/vendor/galleria.twelve.min.js",
-    "modernizr": "./src/js/vendor/modernizr-3.3.1.min.js"
+    "baguetteBox": "./src/js/vendor/baguetteBox.js"
   },
   "browserify-shim": {
-    "google": {
-      "exports": "global:google"
-    },
-    "modernizr": {
-      "exports": "modernizr"
-    },
-    "Galleria": {
-      "exports": "Galleria"
-    },
-    "GalleriaTwelve": {
-      "exports": "GalleriaTwelve"
+    "baguetteBox": {
+      "exports": "baguetteBox"
     }
   }
 }

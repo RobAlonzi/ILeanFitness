@@ -21,7 +21,7 @@ const config = {
 		watchSrc: './src/js/**/*.js',
 		devDest: "./dist/stg/js",
 		prodDest: "./dist/prod/js",
-		bundle: "app.js"
+		bundle: "site.js"
 	}
 }	
 
@@ -82,6 +82,7 @@ function devScripts() {
 		.pipe($.rename({
 			dirname: ''
 		}))
+		.pipe($.concat('site.js'))
 		.pipe(gulp.dest(config.scripts.devDest));
 
  	});
