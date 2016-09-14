@@ -50,3 +50,38 @@
 		}
 	}
 }
+
+.home-page-gallery{
+	overflow:auto;
+
+	li{
+		width:50%;
+		float:left;
+		margin: 10px 0;
+
+		@include bp-sm {
+			width:48%;
+			margin:1%;
+		}
+
+
+		img{
+			max-width: 100%;
+		}
+	}
+}
+
+.home-page-schedule{
+	li{
+		margin: 20px 0;
+
+		h4{
+			margin:0;
+		}
+
+		p{
+			margin:0;
+		}
+
+	}
+}
