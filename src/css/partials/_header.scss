@@ -44,9 +44,87 @@ header .main-nav{
     margin-right:5%;
 
     ul{
+        ul{
+            position: absolute;
+            top: 1.2em;
+            left: -9999px;
+            opacity: 0;
+            min-width: 115px;
+            background: $pink;
+            border:1px solid $white;
+            z-index: 10;
+
+            li{
+                float: none;
+                position: static;
+                padding:5px 10px;
+                border-bottom:1px solid $white;
+                display: block;
+                text-align: left;
+                margin-right:0;
+
+                a{
+                    float: none;
+                    display: block;
+                    color:$white;
+                    font-size:0.9em;
+
+                    &:hover, &:focus{
+                        color: lighten($pink, 10%);
+                    }
+                }
+
+                &:last-of-type{
+                    border-bottom:0;
+                }
+
+            }
+        }
+
         li{
-            a{
-                margin:0 10px;
+            float: left;
+            position: relative;
+            margin-right:15px;
+
+            & > a{
+                float: left;
+                color:$white;
+                font-size:1.15em;
+                text-decoration: none;
+
+                &:hover, &:focus{
+                    color: lighten($pink, 10%);
+                }
+            }
+
+            &.active > a {
+                color:$pink;
+            }
+
+            &:focus, &:hover{
+
+                & > a{
+                    color: lighten($pink, 10%);
+                }
+
+                ul, ul.show-menu{
+                    left: 0;
+                    opacity: 1;
+                }
+                
+            }
+
+            &:last-of-type{
+                margin-right:0;
+            }
+
+            ul.show-menu{
+                left:0;
+                opacity: 1;
+            }
+
+            @include bp-header-542 {
+              float: none;
             }
         }
     }
@@ -71,3 +149,6 @@ header .main-nav{
 .main-nav li{
     display:inline-block;
 }
+
+
+
