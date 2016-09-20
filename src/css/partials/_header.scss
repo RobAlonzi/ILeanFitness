@@ -4,6 +4,10 @@ header{
     position: absolute;
     width: 100%;
 
+    &.no-image{
+        position: static;
+    }
+
     @include bp-header-542 {
         position: static;
     }
@@ -98,7 +102,8 @@ header .main-nav{
             }
 
             &.active > a {
-                color:$pink;
+                color:$white;
+                text-decoration: underline;
             }
 
             &:focus, &:hover{

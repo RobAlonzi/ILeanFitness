@@ -1,0 +1,45 @@
+.main-hero-blog{
+	img{
+		max-width: 100%;
+	}
+}
+
+.blog-container{
+
+	padding:0 0 20px;
+	border-bottom: 1px solid lighten($pink, 10%);
+	margin-top:15px;
+
+	img{
+		max-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	&:last-of-type{
+		margin-bottom:30px;
+		padding:0;
+		border-bottom: 0;
+	}
+}
+
+.pageNav{
+	ul{
+		text-align: right;
+		
+		li{
+			display: inline-block;
+			margin-right:10px;
+
+			&:last-of-type{
+				margin-right:0;
+			}	
+		}
+	}
+}
+
+.blog-post{
+
+	img{
+		max-width: 100%;
+	}
+}
